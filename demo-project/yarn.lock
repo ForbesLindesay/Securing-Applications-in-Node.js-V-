@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+"@authentication/csrf-protection@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@authentication/csrf-protection/-/csrf-protection-0.0.2.tgz#17e18357bd51f4545dbf5fe5c3a8228183593f20"
+  dependencies:
+    "@types/node" "^8.0.33"
+
 "@babel/code-frame@7.0.0-beta.51":
   version "7.0.0-beta.51"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0-beta.51.tgz#bd71d9b192af978df915829d39d4094456439a0c"
@@ -539,6 +545,10 @@
     esutils "^2.0.2"
     lodash "^4.17.5"
     to-fast-properties "^2.0.0"
+
+"@types/node@^8.0.33":
+  version "8.10.20"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.10.20.tgz#fe674ea52e13950ab10954433a7824438aabbcac"
 
 "@webassemblyjs/ast@1.7.8":
   version "1.7.8"
