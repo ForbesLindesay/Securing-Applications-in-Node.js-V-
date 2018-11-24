@@ -1,10 +1,6 @@
 import GoogleAuthentication from '@authentication/google';
 import {Router} from 'express';
 
-process.env.GOOGLE_CLIENT_ID =
-  '115874906918-63lefcfi0l4nhq5kif7478tdvo0t0nm1.apps.googleusercontent.com';
-process.env.GOOGLE_CLIENT_SECRET = 'sfW1xI2FWkNsTagHiHEx1vWz';
-
 const app = Router();
 
 const googleAuthentication = new GoogleAuthentication({

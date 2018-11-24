@@ -1,9 +1,6 @@
 import FacebookAuthentication from '@authentication/facebook';
 import {Router} from 'express';
 
-process.env.FACEBOOK_APP_ID = '263821234318708';
-process.env.FACEBOOK_APP_SECRET = '20dc3bd9d1f514d308b98d290d5a244e';
-
 const app = Router();
 
 const facebookAuthentication = new FacebookAuthentication({
