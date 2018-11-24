@@ -37,7 +37,7 @@ jobs:
       - *Test
       - run:
           name: Deploy Staging
-          command: npx heroku-release publish --app APP-NAME-staging --dir demo-project
+          command: npx heroku-release publish --app securing-node-example-staging --dir demo-project
       - run:
           name: Notify about pending workflow
           command: echo "post to slack"
@@ -50,12 +50,9 @@ jobs:
     <<: *container
     steps:
       - checkout
-      - *Install
-      - *Build
-      - *Test
       - run:
           name: Deploy Production
-          command: npx heroku-release promote --pipeline APP-NAME --source APP-NAME-staging --target APP-NAME-production
+          command: npx heroku-release promote --pipeline securing-node-example --source securing-node-example-staging --target securing-node-example-producti
       - run:
           name: Notify about failed build
           command: echo "post to slack"

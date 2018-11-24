@@ -43,9 +43,11 @@
     "webpack-cli": "^3.1.1"
   },
   "scripts": {
+    "build": "webpack && babel src -d lib && cp -rf src/public lib/public",
+    "start": "node lib/server",
     "precommit": "lint-staged",
-    "prestart": "webpack",
-    "start": "babel-node src/server"
+    "prestart:dev": "webpack",
+    "start:dev": "babel-node src/server"
   },
   "lint-staged": {
     "*.tsx": [
